@@ -1,3 +1,6 @@
+# root dir
+PACKAGE_NAME = "pastebin_replace"
+
 import os
 import requests
 

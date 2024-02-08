@@ -13,7 +13,7 @@ pip install .
 ### With pip (PyPI)
 
 ```bash
-pip install pastebin_replace
+pip install pastebin-replace
 ```
 
 ## Usage
@@ -29,7 +29,7 @@ Suppose you have an empty file named `test.txt` located in `C:\Users\Yourname\Do
 ```python
 from pastebin_replace import pbreplace
 
-pbreplace("C:\Users\Yourname\Downloads\test.txt", "https://pastebin.com/hcv2WRnX")
+pbreplace(r"C:\Users\Yourname\Downloads\test.txt", "https://pastebin.com/hcv2WRnX")
 ```
 
 ### Note

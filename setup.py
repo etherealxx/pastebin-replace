@@ -6,7 +6,7 @@ def readme():
 
 setup(
     name = 'pastebin_replace',
-    version = '0.1',
+    version = '0.1.0',
     description = 'Replace local files with code from a pastebin link',
     long_description = readme(),
     long_description_content_type='text/markdown',

@@ -38,9 +38,10 @@ class WriteFailed(Exception):
 
 def pbreplace(path : str, link : str, rename : str = ""):
 	"""
-	Replace the file provided with downloaded file from 
+	Replace the file provided with downloaded text/code from Pastebin
 
 	Parameters:
+
 	path (str): Absolute path of the file that would be replaced. The original file will be deleted.
 	link (str): Pastebin link (URL) of the paste.
 	rename (str): Optional. Rename the downloaded file (including the extension) to this string. When this is empty, uses the name of the replaced file.
@@ -91,6 +92,8 @@ def pbreplace(path : str, link : str, rename : str = ""):
 			except Exception as e:
 				raise WriteFailed("Failed writing file to disk. Reason: " + str(e))
 
-			print(f"File {path} replaced with the one downloaded from this Pastebin link: {link}")
+			print("\033[92mpbreplace operation succeeded.\033[0m")
+			print(f"The content of file {path} has been replaced with the one downloaded from this Pastebin link: {link}")
+			
 			if rename != "":
 				print("Downloaded file renamed to: " + rename)
